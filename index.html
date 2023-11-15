@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="index.js">
+    <title>Your Charity Website</title>
+    <style>
+        /* CSS for highlighting active links */
+        ul.right li a.active {
+            color: #ff9900; /* Change to the desired active link color */
+            font-weight: bold; /* You can adjust the style as needed */
+        }
+
+        /* CSS for fade-in animation */
+        section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* CSS for pop-up animation */
+        @keyframes popup {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .popup {
+            animation: popup 0.5s ease;
+        }
+    </style>
+</head>
+<style>
+    body {
+        background-image: url('img/bg.jpg'); /* Replace 'background.jpg' with your image file's path */
+        background-size: cover; /* Adjust the size as needed */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* You can further customize background properties like background-position, background-color, etc. */
+    }
+    #aboutus{
+        height: 65vh;
+    }
+    main{
+        align-items: center;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul class="left">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+            <div class="logo" >
+                <!-- <h1 ><a href="index.html">Bhandara </a></h1> -->
+              <a href="index.html" > <button  id="logobtn" style="  color: #f39c12;
+                background-color: #f39c12;
+                border: none;"><img src="img/Design (1).png" alt="" style="    height: 110px;
+    width: 268px; cursor: pointer;"></button></a> 
+            </div>
+            <ul class="right">
+                <li><a href="aboutus.html">  Nearby me</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="https://chat.whatsapp.com/CQM9Kp9TI4yC4oi5V7LaT8   ">Join Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <div class="sidebar">
+            
+        </div> -->
+      <div id="imgt">
+        <img src="img/image1.jpg" alt="">
+      </div>
+        <img src="img/image2.jpg" alt="">
+        <img src="img/image3.jpg" alt="">
+
+        <div class="sect">
+            <section id="aboutus" class="show">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <!-- Add more content as needed -->
+            </section>
+            <section id="donate" class="show">
+                <h2>Donate Now</h2>
+                <p class="popup">Your support can make a difference...</p>
+                <!-- Add more content for the Donate section as needed -->
+            </section>
+            <section id="joinus" class="show">
+                <h2>Join Our Community</h2>
+                <p class="popup">Be a part of our mission...</p>
+                <!-- Add more content as needed -->
+            </section>
+            <section id="contact" class="show">
+                <h2>Contact Us</h2>
+                <p class="popup">Get in touch with us...</p>
+                <!-- Add more content as needed -->
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-left">
+            <h2>Contact Us</h2>
+            <p>Our Organization</p>
+            <p>Our Work</p>
+        </div>
+        <div class="footer-right">
+            <h2>Recent Collaborations</h2>
+            <p>Latest NGO</p>
+        </div>
+    </footer>
+    <script>
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+/* styles.css */
+/* Add this CSS to your existing styles.css file */
+/* styles.css */
+/* Add this CSS to your existing styles.css file */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FFD700, #FFA500, #FFFF66); /* Yellow, Orange, Lemon gradient */
+}
+
+/* ... (the rest of your CSS) ... */
+
+
+header {
+    background-color: #f39c12;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #ffcc33;
+    border-radius: 15px;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul.left {
+    margin-right: auto;
+}
+
+ul.right {
+    margin-left: auto;
+}
+
+li {
+    margin: 0;
+    padding: 0 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    background: #ffcc33;
+    border: 2px solid transparent;
+}
+
+a:hover {
+    color: #fff;
+    background: #f39c12;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.logo {
+    font-size: 28px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Main Section Styles */
+main {
+    /* background-color: #000000; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+}
+/* styles.css */
+/* Add this CSS to your existing styles.css file */
+
+/* ... (previous styles) ... */
+
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.photos {
+    background-color: #fff;
+    padding: 0; /* Remove the padding to make the image cover the entire section */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 50%;
+    height: 65vh;
+    overflow: hidden; /* Hide any overflowing content (the image) */
+}
+#ph-car{
+    width: auto;
+    height: 60vh;
+}
+.explanations {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 50%;
+}
+footer {
+    background: linear-gradient(to right, #000000, #6a6666); /* Customize the gradient colors */
+    color: #333; /* Text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    padding: 1px;
+    color: white;
+    margin-left: 299px; 
+}
+
+.footer-left h2, .footer-right h2 {
+    font-size: 1.2em;
+    color: white;
+}
+
+.footer-left p, .footer-right p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: white;
+}
+
+
+.carousel {
+    width: 80%; /* Adjust the width to your preference */
+    margin: 0 auto; /* Center the carousel horizontally */
+    overflow: hidden;
+  }
+  
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
+  }
+
+  #donate{
+    
+    background-color: #ffcc33;
+    padding: 41px;
+    align-items: center;
+    border: grey 10px solid;
+    border-radius: 15px;
+  }
+  #aboutus{
+    
+    padding: 41px;
+    align-items: center;
+    border: grey 10px solid;
+    border-radius: 15px;
+  }
+  #aboutus p{
+    color: white;
+  }
+  #jn{
+    background-color: #ffcc33;
+    padding: 41px;
+    align-items: center;
+    border: grey 10px solid;
+    border-radius: 15px;
+  }
+  .sidebar{
+    width: 50px;
+    height: 250vh;
+    background: linear-gradient(#ffb907 ,rgb(255, 126, 5));
+    position: absolute;
+    right: 0;
+    top: 18vh;
+    z-index: -1;
+  }
+
+  section#contact {
+    background-color: #f0f0f0; /* Background color for the Contact Us section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 55px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#hst{
+  align-items: center;
+}
